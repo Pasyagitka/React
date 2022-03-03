@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: stolzl;
+}
+
+button {
+    cursor: pointer;
+}
+
+#root {
+    font-size: 18px;
+    color: #343242;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: stolzl;
+    src: url(../assets/fonts/STOLZL-BOLD.TTF);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: stolzl;
+    src: url(../assets/fonts/STOLZL-MEDIUM.TTF);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: stolzl;
+    src: url(../assets/fonts/STOLZL-REGULAR.TTF);
+    font-weight: 100;
+}

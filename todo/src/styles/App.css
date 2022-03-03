@@ -1,0 +1,10 @@
+.app-container {
+    background-color: #b4b3ff;
+    border-radius: 25px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;  
+    overflow: hidden;
+    padding: 20px;
+}

@@ -1,0 +1,14 @@
+.board-container {
+    background-color: #e1e1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 30px;
+    height: 100%;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    font-size: 0.8em;
+}
