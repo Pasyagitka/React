@@ -1,0 +1,42 @@
+.add-todo-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-input {
+    border: 2px solid #b4b3ff;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.add-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.add-button {
+    background-image: url(../assets/icons/add.svg);
+    filter: invert(100%);
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.add-button-container {
+    display: flex;
+    background-color: #7b69e9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 7px;
+}
