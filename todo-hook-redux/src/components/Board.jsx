@@ -1,6 +1,4 @@
-import React, { 
-    useState 
-} from 'react';
+import React, { useState } from 'react';
 import AddTodo from './AddTodo';
 import TodoList from './TodoList';
 import '../styles/Board.css';

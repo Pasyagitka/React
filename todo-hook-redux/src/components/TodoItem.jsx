@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/TodoItem.css'
+import '../styles/TodoItem.css';
 
 const propTypes = {
-    value: PropTypes.string,
+    value: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
 };
 
-function TodoItem(props) {
+function TodoItem({value, onClick}) {
     return (
         <div className="todo-item">
-            <p>{props.value}</p>
+            <p>{value}</p>
             <div className="delete-button-container">
                 <button
                     type="submit"
                     className="delete-button"
-                    onClick={() => props.onClick()}
+                    onClick={() => onClick()}
                 />
             </div>
         </div>

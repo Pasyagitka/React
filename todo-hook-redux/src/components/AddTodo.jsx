@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/AddTodo.css';
 
-
 const propTypes = {
-    newItem: PropTypes.string,
+    newItem: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    onClick: PropTypes.func.isRequired,
 };
 
-function AddTodo(props) {
+function AddTodo({newItem, onChange, onClick}) {
     return (
         <div className="add-todo-container">
             <p>New todo</p>
@@ -16,14 +17,14 @@ function AddTodo(props) {
                     type="text"
                     placeholder="Add new todo here"
                     className="add-input"
-                    value={props.newItem}
-                    onChange={(e) => props.onChange(e)}
+                    value={newItem}
+                    onChange={(e) => onChange(e)}
                 />
                 <div className="add-button-container">
                     <button
                         type="submit"
                         className="add-button"
-                        onClick={props.onClick}
+                        onClick={onClick}
                     />
                 </div>
             </div>

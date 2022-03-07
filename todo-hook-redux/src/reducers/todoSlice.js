@@ -26,7 +26,6 @@ function appReducer(state = initialState, action) {
             ];
         }
         case DELETE_TODO : {
-            console.log(action.payload);
             return state.filter((x) => x.id !== action.payload);
         }
         default:
