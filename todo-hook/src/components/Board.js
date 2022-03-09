@@ -21,9 +21,7 @@ function Board() {
     };
     
     function handleDelete(id) {
-        let newItems = [...todoItems];
-        newItems.splice(id, 1);
-        setTodoItems(newItems);
+        setTodoItems (todoItems.filter((x, index) => index !== id));
     }
     
     function handleInput(event) {

@@ -26,10 +26,8 @@ class Board extends React.Component {
     }
 
     handleDelete(id) {
-        let newItems = [...this.state.todoItems];
-        newItems.splice(id, 1);
         this.setState({
-            todoItems: newItems
+            todoItems: this.state.todoItems.filter((x, index) => index !== id),
         });
     }
 
