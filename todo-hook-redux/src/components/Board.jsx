@@ -7,13 +7,20 @@ import '../styles/Board.css';
 function Board({todoItems, actions}) {
     const [newItem, setNewItem] = useState('');
 
+    function handleAdd() {
+        if(newItem !== '') {
+            actions.addTodo(newItem); 
+            setNewItem('');
+        }
+    }
+
     return (
         <div className="board-container">
             <h1>Todo App</h1>
             <AddTodo
                 newItem={newItem}
-                onClick={() => {actions.addTodo(newItem); setNewItem('');}}
-                onChange={(event) => setNewItem(event.target.value)}
+                onClick={() => handleAdd()}
+                onChange={(event) => {setNewItem(event.target.value);}}
             />
             <TodoList
                 todoItems={todoItems}
